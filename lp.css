@@ -1,0 +1,224 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+nav.scrolled {
+  background: #1E3A8A;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1E3A8A;
+}
+
+nav.scrolled .logo {
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  background: #3B82F6;
+  color: #fff;
+  border-radius: 5px;
+}
+
+nav.scrolled .nav-links a {
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(30,58,138,0.8), rgba(30,58,138,0.8)),
+              url("https://images.unsplash.com/photo-1584697964150-55a2ac9b0a92?ixlib=rb-4.0.3&auto=format&fit=crop&w=1650&q=80") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons .btn {
+  margin: 0 10px;
+}
+
+/* Sections */
+.section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1E3A8A;
+}
+
+.section.light-bg {
+  background: #F9FAFB;
+}
+
+/* Courses */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.course-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  background: #3B82F6;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* Contact */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.contact {
+  background: linear-gradient(90deg, #1E3A8A, #3B82F6);
+  color: #fff;
+}
+
+.socials {
+  margin-top: 1.5rem;
+}
+
+.socials a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background: #1E3A8A;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: #3B82F6;
+  color: #fff;
+}
+
+.btn.secondary {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
